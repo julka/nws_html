@@ -1,0 +1,24 @@
+{
+  "name": "nws_html",
+  "version": "1.0.0",
+  "description": "Creates an HTML page from the National Weather Service XML URL",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/julka/nws_html.git"
+  },
+  "author": "Julka Grodel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/julka/nws_html/issues"
+  },
+  "homepage": "https://github.com/julka/nws_html",
+  "dependencies": {
+    "express": "^4.12.3",
+    "jade": "^1.9.2",
+    "xml2js": "^0.4.6"
+  }
+}
