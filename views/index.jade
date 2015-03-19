@@ -1,0 +1,17 @@
+doctype html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"
+html(xmlns="http://www.w3.org/1999/xhtml")
+  head
+    title!= source
+    meta(http-equiv="Content-Type" content="text/html; charset=utf-8")
+    link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css")
+  body
+    div(class="container")
+      h1(class="text-center")
+        a(href="#{sourceUrl}") #{source}
+      p(class="lead text-center")!= location
+      p(class="text-center")!= time
+      table(class="table table-striped")
+        each item in properties
+          tr
+            th(class="col-md-6")= item.property
+            td(class="col-md-6")= item.value
